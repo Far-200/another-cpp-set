@@ -1,0 +1,111 @@
+# ==================================================
+# C++ compiled files
+# ==================================================
+
+*.exe
+*.out
+*.app
+*.bin
+
+*.o
+*.obj
+*.lo
+*.slo
+
+*.a
+*.lib
+*.la
+*.lai
+
+*.dll
+*.so
+*.so.*
+*.dylib
+
+*.exp
+*.ilk
+*.pdb
+*.idb
+
+# ==================================================
+# Common executable names created during practice
+# ==================================================
+
+a.exe
+a.out
+
+# ==================================================
+# Build directories
+# ==================================================
+
+build/
+Build/
+debug/
+Debug/
+release/
+Release/
+bin/
+obj/
+out/
+
+# ==================================================
+# CMake generated files
+# ==================================================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# ==================================================
+# Visual Studio files
+# ==================================================
+
+.vs/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# ==================================================
+# VS Code local settings
+# ==================================================
+
+.vscode/
+
+# Code Runner temporary files
+tempCodeRunnerFile.cpp
+tempCodeRunnerFile.c
+tempCodeRunnerFile.*
+
+# ==================================================
+# JetBrains / CLion
+# ==================================================
+
+.idea/
+cmake-build-*/
+
+# ==================================================
+# Operating system files
+# ==================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================================================
+# Temporary and backup files
+# ==================================================
+
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*~
