@@ -1,0 +1,57 @@
+#include <iostream>
+//#include <algorithm>
+using namespace std;
+
+int main(){
+    char c = 'C';
+    char w = 'W';
+    char s = 'S';
+    char ans;
+    int correct_ans;
+    int final_score;
+    int bonus = 5;
+
+    //Okay
+    //Correct answer when the user enters 'C', and ,ark is +10
+    //Wrong answer when the user enters 'W', and mark is -6
+    //Skip answer when the user enters 'S', and mark is -2
+    //Score can't exceed 100
+    //Marks can't fall below 0
+
+    //Bonus💔
+    //Everytime three correct answers, bonus of +5 marks. After three consecutive correct answers, the bonus streak is reseted. 
+    //And a wrong or a skipped answers settles bonus to 0.
+    
+    int startConfidence ;
+    cout << "Enter your starting confidence level (0-100): ";
+    cin >> startConfidence;
+
+    int plannedAttempts;
+    cout << "Enter the number of planned attempts: ";
+    cin >> plannedAttempts;
+
+    for(int i = 0; i < plannedAttempts; i++){
+        cout << "Attempt " << i + 1 << " result: ";
+        //char ans;
+        cin >> ans;
+    
+
+        //Now, to take and check if the user inputs three consecutive "C", let's try a while loop.
+            while(ans == 'C' || ans == 'c'){
+                correct_ans = 0;
+                correct_ans++;
+            }
+            if(correct_ans == 3){
+                final_score += bonus;
+            }
+        }
+        
+
+
+    }
+
+    cout << "Processed Inputs: " << plannedAttempts << endl;
+
+
+    return 0;
+}
