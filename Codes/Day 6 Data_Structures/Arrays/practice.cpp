@@ -8,13 +8,24 @@
 using namespace std;
 
 int main() {
-
+    
+    int n;
     // ================================================================
     // P1. INPUT + PRINT
     // Read n, then read n integers into an array, then print them
     // on one line separated by spaces.
     // ================================================================
+    cin >> n;
 
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     // ================================================================
     // P2. SUM OF EVEN NUMBERS
     // Given an array, print the sum of only its even elements.
