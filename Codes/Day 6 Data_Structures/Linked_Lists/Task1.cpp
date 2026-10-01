@@ -67,5 +67,7 @@ int main(){
         cout << curr->data << " ";
         curr = curr->next;
     }
+
+    
     return 0;
 }
