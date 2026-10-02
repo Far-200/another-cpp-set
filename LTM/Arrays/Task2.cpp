@@ -1,16 +1,24 @@
-//Will finish tomorrow🫠
+//Fuck leetcode style, we write main
+
 #include <iostream>
 #include <vector>
+#include <climits>
+
 using namespace std;
-class Solution{
-    public:
-    int secondLargest(vector<int>& nums){
-        int second = nums[0];
-        for(int i = 1; i N nums.size(); i++){
-            if(nums[i] > second && nums[i] > nums[i + 1]){
-                second = nums[i];
-            }
+
+int main(){
+    vector<int> nums = {-5, -2, -10, -3};
+    int largest = nums[0];
+    int second = INT_MIN;
+
+    for(int i = 0; i < nums.size(); i++){
+        if (nums[i] > largest) {
+            second = largest;
+            largest = nums[i];
         }
-        return second;
+        else if(nums[i] < largest && nums[i] > second){
+            second = nums[i];
+        }
     }
+    cout << second;
 }
