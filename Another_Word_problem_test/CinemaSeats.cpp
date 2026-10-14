@@ -11,11 +11,12 @@ int main(){
     int available = 0;
     int unavailable = 0;
     int index = 0;
+    //int unavailable_seats(unavailable);
     cout << "Seats:" << endl;
     for(int i = 0; i < seats.size(); i++){
         seats[i] = i + 1;
         cout << seats[i] << " ";
-        if(seats[i] % 3 && seats[i] % 5 == 0){
+        if(seats[i] % 3 == 0 && seats[i] % 5 == 0){
             unavailable++;
             continue;
         }
@@ -27,6 +28,8 @@ int main(){
             unavailable++;
             continue;
         }
+        
+        seats[index] = seats[i];
         index++;
     }
     cout << endl;
@@ -34,15 +37,15 @@ int main(){
     available = n - unavailable;
     cout << "Available seats: " << available << endl;
     cout << "Available seat numbers: " << endl;
-    vector<int> avail_seats(available);
-    for(int i = 0; i < available; i++){
-        for(int j = 0; j < index - i - 1; j++){
-            avail_seats[i] = i;
-            cout << avail_seats[i] << " ";
-            j++;
-        }
+    for(int i = 0; i < index; i++){
+        cout << seats[i] << " ";
     }
     cout << endl;
     cout << "Unavailable seats: " << unavailable << endl;
+    for(int seat_num = 1; seat_num <= n; seat_num++){
+        if(seat_num % 3 == 0 || seat_num % 5 == 0){
+            cout << seat_num << " ";
+        }
+    }
     return 0;
 }
