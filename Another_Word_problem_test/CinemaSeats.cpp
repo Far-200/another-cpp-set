@@ -11,7 +11,6 @@ int main(){
     int available = 0;
     int unavailable = 0;
     int index = 0;
-    //int unavailable_seats(unavailable);
     cout << "Seats:" << endl;
     for(int i = 0; i < seats.size(); i++){
         seats[i] = i + 1;
